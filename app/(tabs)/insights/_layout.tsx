@@ -1,0 +1,13 @@
+import { Stack, useSegments } from "expo-router";
+
+export default function InsightsLayout() {
+  return (
+    <Stack 
+      screenOptions={{ headerShown: false }}
+    >
+      <Stack.Screen name='(tabs)' />
+      <Stack.Screen name='(modals)' />
+    </Stack>
+  );
+}
+
